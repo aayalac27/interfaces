@@ -10,5 +10,17 @@ image = Image.open('image.jpeg')
 st.image(image, caption="Polos opuestos")
 
 
-texto = st.text_imput("sisas la k")
-st.write('el texto escrito es', texto)
+texto = st.text_input("sisas la k")
+st.write("la cara del trap de medallo")
+
+st.subheader("Ahora usemos 2 columnas")
+
+col1, col2 = st.columns(2)
+
+with col2:
+  st.subheader("Segunda columna")
+  modo = st.radio("Que modalidad es la principal en tu interfaz", ("Visual","Auditiva","Táctil"))
+  if modo == "Visual":
+    st.write("La vista es fundamental para tu interfaz")
+  if modo == "Auditivo":
+    st.write("La audición es fundamental para tu interfaz")
