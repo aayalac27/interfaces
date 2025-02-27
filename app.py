@@ -10,5 +10,5 @@ image = Image.open('image.jpeg')
 st.image(image, caption="Polos opuestos")
 
 
-texto = st.text_imput('sisas la k','la cara del trap de medallo')
+texto = st.text_imput("sisas la k","la cara del trap de medallo")
 st.write('el texto escrito es', texto)
